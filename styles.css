@@ -274,7 +274,9 @@ li {
 }
 
 .download img {
-    width: 200px;
+    width: 180px;
+    aspect-ratio: 2/1;
+    height: auto;
     object-fit: contain;
 }
 
