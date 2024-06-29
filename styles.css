@@ -55,16 +55,38 @@ li {
     background-color: #FFF;
 }
 
-.app__navbar p {
+.nav__center {
     width: 1400px;
     max-width: 100%;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.nav__center p {
     text-align: left;
-    font-size: 28px;
+    font-size: 2rem;
     font-weight: 600;
     letter-spacing: 1.4px;
     font-family: var(--f-p);
     color: #5F4C2D;
+}
+
+.nav__center a {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #82775d;
+    font-family: var(--f-p);
+    transition: background-color 0.3s linear;   
 }
 
 .app__main {
@@ -128,9 +150,12 @@ li {
     border: none;
     outline: none;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 18px;
     color: #FFFFFF;
-    background-color: #2F2A1F;
+    background-color: #82775d;
     font-family: var(--f-p);
     transition: background-color 0.3s linear;
 }
@@ -273,9 +298,16 @@ li {
     flex-wrap: wrap;
 }
 
+.download a {
+    padding: 0.4rem;
+    outline: none;
+    border: 1.2px solid transparent;
+    border-radius: 4px;
+    transition: border-color 0.3s ease; 
+}
+
 .download img {
     width: 180px;
-    aspect-ratio: 2/1;
     height: auto;
     object-fit: contain;
 }
@@ -313,7 +345,16 @@ li {
     font-size: 24px;
     color: rgb(152, 152, 152);
     text-align: center;
+    outline: none;
     transition: color 0.3s linear;
+    padding: 0.2rem;
+    width: 32px;
+    height: 32px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ***************************************************************************** */
@@ -322,12 +363,21 @@ li {
 
 @media (hover: hover) and (pointer: fine) {
 
-    .hero__section > div a:hover {
-        background-color: #443721;
+    .hero__section > div a:is(:hover, :focus-visible), .nav__center a:is(:hover, :focus-visible) {
+        background-color: #b57e1e;
     }
 
     .app__footer > div a:hover {
         color: #DDDDDD;
+    }
+
+    .download a:focus-visible {
+        border-color: #DDDDDD;
+    }
+
+    .app__footer > div a:focus-visible {
+        color: #DDDDDD;
+        border-color: #DDDDDD;
     }
 
 }
