@@ -84,7 +84,7 @@ li {
     align-items: center;
     font-size: 18px;
     color: #FFFFFF;
-    background-color: #82775d;
+    background-color: #4d3f1f;
     font-family: var(--f-p);
     transition: background-color 0.3s linear;   
 }
@@ -155,7 +155,7 @@ li {
     align-items: center;
     font-size: 18px;
     color: #FFFFFF;
-    background-color: #82775d;
+    background-color: #4d3f1f;
     font-family: var(--f-p);
     transition: background-color 0.3s linear;
 }
@@ -364,7 +364,7 @@ li {
 @media (hover: hover) and (pointer: fine) {
 
     .hero__section > div a:is(:hover, :focus-visible), .nav__center a:is(:hover, :focus-visible) {
-        background-color: #b57e1e;
+        background-color: #704700;
     }
 
     .app__footer > div a:hover {
